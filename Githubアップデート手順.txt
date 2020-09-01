@@ -1,0 +1,25 @@
+首次安装git后，需要生成密钥和github关联。
+在git bash界面输入如下内容即可完成邮箱的注册：
+$ git config --global user.name "github的用户名"
+$ git config --global user.email "注册邮箱"
+
+
+本地创建成功的工程提交到github
+1.创建本地文件夹，作为提交工程代码的仓库(例：test)。
+2.进入test文件夹，邮件选择 Git Bash Here,进入命令窗
+3.输入  $ git init  通过命令git init把这个文件夹变成Git可管理的仓库
+4.成功后会生成一个.git的隐藏文件夹。
+5.把要上传的代码复制到仓库中，注意是工程文件夹内的所有文件，不是工程文件夹，注意如果文件夹内有关联过的git仓库，请删除
+6.输入 $ git add .    成功后，仓库内的文件处于待上传状态
+7.输入 $ git commit -m "first commit" 成功后，待上传状态的代码成功提交
+8.输入 $ git remote add origin git@github.com:yonghuming/repositoryname.git
+                                             github用户名/创建过的repository名称
+9.此时代码已成功上传。
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+.header {
+  background-color: black;
+  display: flex; /** 默认浮动*/
+  align-items: center; /** 各组件剧中*/
+
+  /** 导航栏固定*/
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header_logo {
+  width: 100px;
+  /** 外边距*/
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header_search {
+  display: flex;
+  flex: 1; /** 親タグのサイズは子タグと合わせる*/
+}
+
+.header_searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header_searchIcon {
+  padding: 5px;
+  height: 22px !important; /** header_searchIconとheader_searchInputの高さを合わせる*/
+  background-color: rgb(245, 184, 105);
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header_link {
+  color: white;
+  text-decoration: none; /** 下划线*/
+}
+.header_option {
+  display: flex;
+  flex-direction: column; /** タグは列で並べる*/
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header_optionLineOne {
+  font-size: 10px;
+}
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+}
+.header_basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
