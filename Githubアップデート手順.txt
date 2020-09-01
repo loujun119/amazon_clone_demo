@@ -14,7 +14,7 @@ $ git config --global user.email "注册邮箱"
 7.输入 $ git commit -m "first commit" 成功后，待上传状态的代码成功提交
 8.输入 $ git remote add origin git@github.com:yonghuming/repositoryname.git
                                              github用户名/创建过的repository名称
-9.此时代码已成功上传。
+9.输入 $ git push -u origin master此时代码已成功上传。
 
 
 
