@@ -32,7 +32,4 @@ function App() {
   );
 }
 
-{
-  /**  Git push test 2020/09/14 2302*/
-}
 export default App;
