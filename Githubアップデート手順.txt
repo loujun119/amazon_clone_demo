@@ -1,30 +1,42 @@
 一，配置
-首次在本地PC安装git后，需要生成密钥和github/gitLab关联。
-在git bash界面输入如下内容即可完成邮箱的注册：
-$ git config --global user.name "github的用户名"
-$ git config --global user.email "注册邮箱"
+  首次在本地PC安装git后，需要生成密钥和github/gitLab关联。
+  在git bash界面输入如下内容即可完成邮箱的注册：
+  $ git config --global user.name "github的用户名"
+  $ git config --global user.email "注册邮箱"
 
 二，下载代码到本地 Pull プル
-三，上传代码到git
-1.命令行式
-  本地创建成功的工程提交到github
-  1.创建本地文件夹，作为提交工程代码的仓库(例：test)。
-  2.进入test文件夹，邮件选择 Git Bash Here,进入命令窗
-  3.输入  $ git init  通过命令git init把这个文件夹变成Git可管理的仓库
-  4.成功后会生成一个.git的隐藏文件夹。
-  5.把要上传的代码复制到仓库中，注意是工程文件夹内的所有文件，不是工程文件夹，注意如果文件夹内有关联过的git仓库，请删除
-  6.输入 $ git add .    成功后，仓库内的文件处于待上传状态
-  7.输入 $ git commit -m "first commit" 成功后，待上传状态的代码成功提交
-  8.输入 $ git remote add origin git@github.com:loujun119/JavaScriptMemo.git
-                                             github用户名/创建过的repository名称
-  9.输入 $ git push -u origin master此时代码已成功上传。
+  1.获取需要下载的文件的URL:git@github.com:loujun119/JavaScriptMemo.git
+  2.选择要存放代码的文件夹。
+  3.在文件夹内邮件，选择“Git Bash Here”
+  4.输入 git  clone  git@github.com:loujun119/JavaScriptMemo.git //项目在GitLab上的URL
+  5.成功下载文件到本地文件夹。
 
-2.VS Code
- 1.点击左侧面板的git控制按钮，类似听诊器的
- 2.选择修改过的代码，作为要上传的文件，修改过的文件名称右侧有控制按钮
-   2.1 Open file  打开文件
-   2.2 Discard Changes 放弃修改文件
-   2.2 Stage Changes 阶段修改式修改
+三，上传代码到git
+ 1.命令行式
+   本地创建成功的工程提交到github
+   1.创建本地文件夹，作为提交工程代码的仓库(例：test)。
+   2.进入test文件夹，邮件选择 Git Bash Here,进入命令窗
+   3.输入  $ git init  通过命令git init把这个文件夹变成Git可管理的仓库
+   4.成功后会生成一个.git的隐藏文件夹。
+   5.把要上传的代码复制到仓库中，注意是工程文件夹内的所有文件，不是工程文件夹，注意如果文件夹内有关联过的git仓库，请删除
+   6.输入 $ git add .    成功后，仓库内的文件处于待上传状态
+   7.输入 $ git commit -m "first commit" 成功后，待上传状态的代码成功提交
+   8.输入 $ git remote add origin git@github.com:loujun119/JavaScriptMemo.git
+                                             github用户名/创建过的repository名称
+   9.输入 $ git push -u origin master此时代码已成功上传。master是节点，Branch。
+
+ 2.VS Code
+  1.点击左侧面板的git控制按钮，类似听诊器的
+  2.选择修改过的代码，作为要上传的文件，修改过的文件名称右侧有控制按钮
+    2.1 文件图标 Open file  打开文件
+    2.2 箭头 Discard Changes 放弃修改文件
+    2.2 加号 Stage Changes 阶段式修改,即，点击要上传的文件后，文件会移动到Staged Changes文件夹里，点击减号取消。
+  3.在Message入力栏里，填写相关的上传描述信息
+  4.点击上方的对号按钮（commit），提交代码。选择阶段文件的话，只提交Staged Changes文件夹里的文件。
+   未选择的话，则提交全部修改文件，Changes文件夹里的。
+  5.点击...选择Push，正式提交文件到git上。
+  
+四，代码管理 合并marge,节点branch
 
 
 
